@@ -35,7 +35,7 @@
 }
 
 body {
-    margin: 4.375rem auto;
+    margin: 7.5rem auto;
     padding: 0;
     font-family: var(--font-family);
     font-size: .8125rem;
@@ -44,7 +44,7 @@ body {
 
 .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 
     grid-template-rows: auto;
     grid-template-areas: "card1 card1 card2 card5"
@@ -95,13 +95,18 @@ body {
     padding: 0;
     min-height: 0;
 }
+
+.testimonial-data {
+    margin-block: 0 1rem;
+    margin-inline: 1.5rem;
+}
 .text{
     font-size: .9375rem;
     line-height: 1.2;
 }
 
 .quote {
-    font-size: .8125rem;
+    font-size: .75rem;
     opacity: 0.9;
     line-height: 1.4;
     padding: 0;
@@ -222,7 +227,7 @@ body {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -240,12 +245,12 @@ body {
     margin: 0 auto;
   }
   .text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 /* For small screens (mobile: 600px and below) */
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .testimonial-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
